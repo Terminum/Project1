@@ -12,14 +12,10 @@ public:
 
 	}
 
-	void SetX()
+	void SetXY()
 	{
 		std::cout << "Enter x - ";
 		std::cin >> x;
-	}
-
-	void SetY()
-	{
 		std::cout << "Enter y - ";
 		std::cin >> y;
 	}
@@ -91,8 +87,7 @@ int main()
 		if (c == 'a')
 		{
 			Point p;
-			p.SetX();
-			p.SetY();
+			p.SetXY();
 			Dots.push_back(p);
 		}
 		if (c == 'm')
@@ -116,6 +111,7 @@ int main()
 					M2[i] = 1;
 				}
 			}
+			std::cout << "Done! " << std::endl;
 		}
 		if (c == 'p')
 		{
